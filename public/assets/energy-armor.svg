@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="xMidYMid meet" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="armor">
+<circle id="Ellipse 76" cx="8" cy="8" r="8" fill="var(--fill-0, #2A2A2A)"/>
+<g id="Group 1505">
+<path id="Union" d="M8.00052 2.26667L11.8003 5.00007L10.8003 11.3331L8.00052 13.0665H7.93314L5.13333 11.3331L4.13333 5.00007L7.93314 2.26667H8.00052Z" fill="var(--fill-0, #D9D9D9)"/>
+<path id="Subtract" d="M11.2002 5.41758L10.3564 10.7594L7.99508 12.2213H7.93844L5.57712 10.7594L4.73337 5.41758L7.93844 3.11191H7.99508L11.2002 5.41758ZM7.94235 3.67051L5.12985 5.69395L5.87008 10.3805L7.94235 11.6627H7.99118L10.0634 10.3805L10.8037 5.69297L7.99118 3.67051H7.94235Z" fill="var(--fill-0, #2A2A2A)"/>
+<path id="Union_2" d="M8.01286 6.66673L9.46794 7.71263L9.08512 10.1365L8.01286 10.8005H7.98747L6.91618 10.1365L6.53337 7.71263L7.98747 6.66673H8.01286Z" fill="var(--fill-0, #2A2A2A)"/>
+</g>
+</g>
+</svg>

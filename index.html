@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aure — AI Personal Stylist</title>
+  <meta name="description" content="Aure is an AI personal stylist that reads the moment, the mood, and what you already own — then tells you exactly what to wear and why." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Geist:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="module" src="/main.js" defer></script>
+</head>
+<body>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section class="section section-hero">
+      <h1 class="heading-display">Your style runs on<br>energy, not items</h1>
+      <p class="body-text">
+        Aure is an ai personal stylist that reads the moment, the mood, and what you already own — then tells you exactly what to wear and why.
+      </p>
+      <a href="https://aure.style" class="cta-button">try aure →</a>
+      <div class="phone-frame phone-hero">
+        <img src="/assets/hero-phone.png" alt="Aure app interface" />
+      </div>
+    </section>
+
+    <!-- Section 2: Energies -->
+    <section class="section section-energies">
+      <h2 class="heading-display">learn what drives<br><em>how</em> you dress</h2>
+      <p class="body-text">
+        Aure maps your style to seven energies — forces that explain not just what clothes you reach for, but why. Every outfit is a signal. Aure helps you understand what yours is saying.
+      </p>
+      <div class="energy-card" id="energy-card">
+        <div class="energy-pills" id="energy-pills"></div>
+        <div class="energy-card-content" id="energy-content">
+          <div class="energy-card-left">
+            <div class="energy-card-header">
+              <div class="energy-card-icon" id="energy-icon"></div>
+              <div class="energy-card-title">
+                <h3 id="energy-name"></h3>
+                <span class="energy-subtitle" id="energy-short"></span>
+              </div>
+            </div>
+            <p class="energy-description" id="energy-desc"></p>
+            <div class="energy-quotes" id="energy-quotes"></div>
+          </div>
+          <div class="energy-card-right" id="energy-images">
+            <!-- images will go here when sourced -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Wardrobe -->
+    <section class="section section-wardrobe">
+      <h2 class="heading-display">Your wardrobe is richer<br><em>than you think.</em></h2>
+      <p class="body-text">
+        Aure works with what you own first. The more you share, the sharper it gets — surfacing combinations you never considered and showing you just how much range already lives in your closet.
+      </p>
+      <div class="phone-pair">
+        <div class="phone-frame">
+          <img src="/assets/wardrobe-phone-left.png" alt="Wardrobe analysis" />
+        </div>
+        <div class="phone-frame">
+          <img src="/assets/wardrobe-phone-right.png" alt="Outfit suggestions" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Style Mapped -->
+    <section class="section section-mapped">
+      <h2 class="heading-display">Your style,<br><em>mapped.</em></h2>
+      <p class="body-text">
+        Aure builds a living profile of how you show up — your dominant energies, your gaps, your evolution. Not a quiz result. A mirror that sharpens every time you get dressed.
+      </p>
+      <div class="phone-frame phone-mapped">
+        <img src="/assets/style-mapped-phone.png" alt="Style profile map" />
+      </div>
+    </section>
+
+    <!-- Section 5: Final CTA -->
+    <section class="section section-cta">
+      <h2 class="heading-display">stop guessing,<br><em>start knowing.</em></h2>
+      <a href="https://aure.style" class="cta-button">try aure →</a>
+      <p class="body-text body-text--subtle">
+        aure lives on the web, farcaster, and wherever you get dressed.
+      </p>
+    </section>
+  </main>
+
+  <!-- Fixed Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <nav class="footer-nav">
+          <a href="mailto:ameer@hvndtek.com" class="footer-link">connect</a>
+          <a href="https://farcaster.xyz/aureai" class="footer-link" target="_blank" rel="noopener">farcaster</a>
+          <a href="https://sup.net/patch/03fn3l56ji3ktsorw7ysuitx4" class="footer-link" target="_blank" rel="noopener">sup</a>
+        </nav>
+        <div class="footer-info">
+          <p>Aure AI Stylist</p>
+          <p>Made in Philadelphia</p>
+          <p>For the clothing curious</p>
+          <p>2026 and beyond</p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="/assets/aure-logo.svg" alt="AURE" class="footer-logo" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
