@@ -250,7 +250,7 @@ a {
 .energy-card-content {
   display: flex;
   gap: 16px;
-  padding: 16px 16px 24px;
+  padding: 16px 20px 24px;
   transition: opacity 0.15s ease;
 }
 
@@ -323,20 +323,30 @@ a {
 
 .energy-card-right {
   flex: 1;
+  min-width: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 16px 0;
   min-height: 270px;
 }
 
-.outfit-img {
+/* Duo / multi-hero: keep compact tiles (reads well side by side). */
+.energy-card-right .outfit-img {
   width: 180px;
   height: 270px;
   object-fit: cover;
   border-radius: 20px;
   flex-shrink: 0;
+}
+
+/* Single hero: wider crop, same height as duo tiles (keeps scroll height stable). */
+.energy-card-right .outfit-img:only-child {
+  width: min(320px, 100%);
+  height: 270px;
+  object-fit: cover;
 }
 
 /* Wardrobe Section */
@@ -456,11 +466,17 @@ main {
   .energy-card-right {
     justify-content: center;
     padding: 0 0 8px;
+    min-height: 0;
   }
 
-  .outfit-img {
-    width: 140px;
-    height: 210px;
+  /* One hero in the DOM on mobile (see main.js); tall portrait reads better. */
+  .energy-card-right .outfit-img:only-child {
+    width: min(100%, 420px);
+    height: auto;
+    aspect-ratio: 2 / 3;
+    max-height: min(520px, 68vh);
+    object-fit: cover;
+    margin-inline: auto;
   }
 
   .phone-pair .phone-frame {
@@ -526,9 +542,10 @@ main {
     font-size: 17px;
   }
 
-  .outfit-img {
-    width: 120px;
-    height: 180px;
+  .energy-card-right .outfit-img:only-child {
+    width: 100%;
+    max-width: none;
+    max-height: min(480px, 62vh);
   }
 
   .phone-pair {
